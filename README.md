@@ -1,4 +1,6 @@
-# <span style="color: #2563EB;">🔷 </span> <span style="color: #8b4b5c;">R</span><span style="color: #8b4b5c;">G</span><span style="color: #8b4b5c;">X</span> <span style="color: #2563EB;">| </span> <span style="color: #2563EB;">M</span><span style="color: #ffffff;">aplestory </span><span style="color: #2563EB;">L</span><span style="color: #ffffff;">evel-</span><span style="color: #2563EB;">U</span><span style="color: #2563EB;">!</span>
+# <span style="color: #2563EB;">🔷 </span> <span style="color: #8b4b5c;">R</span><span style="color: #8b4b5c;">G</span><span style="color: #8b4b5c;">X</span> <span style="color: #2563EB;">| </span> <span style="color: #2563EB;">M</span><span style="color: #ffffff;">aplestory </span><span style="color: #2563EB;">L</span><span style="color: #ffffff;">evel-</span><span style="color: #2563EB;">U</span><span style="color: #ffffff;">p</span><span style="color: #2563EB;">!</span>
+
+![MSLU Logo](https://github.com/DonnieDice/MaplestoryLevelUp/blob/main/media/logo.png?raw=true)
 
 ## ![](https://github.com/donniedice/SimpleQuestPlates/blob/main/images/kiwi.gif?raw=true) <span style="color: #8b4b5c;">R</span><span style="color: #8b4b5c;">G</span><span style="color: #8b4b5c;">X</span> <span style="color: #4ecdc4;">Mods</span> <span style="color: #3598db;">-</span> <span style="color: #8b4b5c;">R</span><span style="color: #6b8fb0;">ealm</span><span style="color: #8b4b5c;">G</span><span style="color: #8b4b5c;">X</span> <span style="color: #6b8fb0;">Community Project</span>
 
@@ -6,7 +8,7 @@
 
 ## <span style="color: #2563EB;">🎯 Overview</span>
 
-**<span style="color: #8b4b5c;">R</span><span style="color: #8b4b5c;">G</span><span style="color: #8b4b5c;">X</span> <span style="color: #3598db;">| </span> <span style="color: #2563EB;">M</span><span style="color: #ffffff;">aplestory </span><span style="color: #2563EB;">L</span><span style="color: #ffffff;">evel-</span><span style="color: #2563EB;">U</span><span style="color: #2563EB;">!</span>** <span style="color: #e67e23;">brings a MapleStory-inspired level-up jingle to</span> <span style="color: #06c;">World of Warcraft</span><span style="color: #e67e23;">, replacing the default sound with a bright nostalgic level-up moment.</span>
+**<span style="color: #8b4b5c;">R</span><span style="color: #8b4b5c;">G</span><span style="color: #8b4b5c;">X</span> <span style="color: #3598db;">| </span> <span style="color: #2563EB;">M</span><span style="color: #ffffff;">aplestory </span><span style="color: #2563EB;">L</span><span style="color: #ffffff;">evel-</span><span style="color: #2563EB;">U</span><span style="color: #ffffff;">p</span><span style="color: #2563EB;">!</span>** <span style="color: #e67e23;">brings a MapleStory-inspired level-up jingle to</span> <span style="color: #06c;">World of Warcraft</span><span style="color: #e67e23;">, replacing the default sound with a bright nostalgic level-up moment across supported WoW versions.</span>
 
 ![RealmGX Kiwi](https://github.com/donniedice/SimpleQuestPlates/blob/main/images/kiwi.gif?raw=true) **<span style="color: #2dc26b;">The Kiwi Says:</span>** <span style="color: #b96ad9;">"Maple ding! Bwwiiiee."</span>
 
@@ -32,4 +34,44 @@
 
 ## <span style="color: #2563EB;">📋 Slash Commands</span>
 
+<span style="color: #e67e23;">The addon can be managed using the following slash commands</span><span style="color: #3598db;">:</span>
+
 <div style="background-color: #0d1117; color: #58a6ff; font-family: 'Consolas', 'Monaco', monospace; border: 1px solid #30363d;">/mslu help     # Show all available commands<br>/mslu test     # Play test sound<br>/mslu enable   # Enable the addon<br>/mslu disable  # Disable the addon<br>/mslu welcome  # Toggle login message<br>/mslu high     # Use high quality sound<br>/mslu med      # Use medium quality sound (default)<br>/mslu low      # Use low quality sound</div>
+
+***
+
+## <span style="color: #2563EB;">🎮 Compatibility</span>
+
+<span style="color: #2dc26b;"><strong>Retail</strong></span> <span style="color: #3598db;">|</span> <span style="color: #2dc26b;">✅ Supported</span>
+
+<span style="color: #4ecdc4;"><strong>Wrath Classic</strong></span> <span style="color: #3598db;">|</span> <span style="color: #4ecdc4;">✅ Supported</span>
+
+<span style="color: #ff6b6b;"><strong>Burning Crusade Classic</strong></span> <span style="color: #3598db;">|</span> <span style="color: #ff6b6b;">✅ Supported</span>
+
+<span style="color: #2563EB;"><strong>Classic Era</strong></span> <span style="color: #3598db;">|</span> <span style="color: #2563EB;">✅ Supported</span>
+
+***
+
+## <span style="color: #2563EB;">📥 Installation</span>
+
+1.  **<span style="color: #2dc26b;">Download</span>** <span style="color: #2563EB;">MSLU</span> <span style="color: #e67e23;">from your preferred platform.</span>
+2.  **<span style="color: #4ecdc4;">Extract</span>** <span style="color: #e67e23;">the folder to your WoW `Interface/AddOns` directory.</span>
+3.  **<span style="color: #b96ad9;">Restart</span>** <span style="color: #06c;">WoW</span> <span style="color: #e67e23;">and enable the addon.</span>
+
+![RealmGX Kiwi](https://github.com/donniedice/SimpleQuestPlates/blob/main/images/kiwi.gif?raw=true) **<span style="color: #2dc26b;">The Kiwi Says:</span>** <span style="color: #b96ad9;">"Installation complete. Maple-level good."</span>
+
+***
+
+## <span style="color: #2563EB;">💝 Support the Project</span>
+
+<span style="color: #e67e23;">Love MSLU? Support development through GitHub, Buy Me a Coffee, or CashApp and help power more RGX Mods releases.</span>
+
+***
+
+## <span style="color: #2563EB;">🤝 Feedback and Contributions</span>
+
+<span style="color: #e67e23;">Report issues, suggest features, or contribute improvements through GitHub and the RealmGX community.</span>
+
+***
+
+## <span style="color: #4ecdc4;">🌟 Thank you for choosing </span> <span style="color: #8b4b5c;">R</span><span style="color: #8b4b5c;">G</span><span style="color: #8b4b5c;">X</span> <span style="color: #4ecdc4;">Mods! 🌟</span>
