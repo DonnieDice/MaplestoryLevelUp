@@ -1,0 +1,15 @@
+## Interface: 11508
+## Version: 2.0.0
+## Title: |cff2563EBM|r|cffffffffaplestory |r|cff2563EBL|r|cffffffffevel-|r|cff2563EBU|r|cff2563EB!|r
+## Notes: Play a MapleStory-inspired level-up sound!  |n|r  |cff2563EB/mslu -|r Open help  |n|r   |cff2563EBBy DonnieDice|r
+## Author: DonnieDice
+## SavedVariables: MSLUSettings
+
+## X-Category: UI Media, Questing & Leveling, Audio & Video, Miscellaneous
+## X-Website: https://github.com/donniedice/MaplestoryLevelUp
+## X-Curse-Project-ID: 420122
+## X-Wago-ID: qv63JmKb
+## X-WoWI-ID: 26257
+
+data\locales.lua
+data\core.lua

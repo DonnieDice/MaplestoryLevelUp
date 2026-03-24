@@ -1,31 +1,35 @@
-[![](https://img.shields.io/static/v1?label=Donate&message=CashApp&color=brightgreen)](https://bit.ly/3fyxxSU)
+# <span style="color: #2563EB;">🔷 </span> <span style="color: #8b4b5c;">R</span><span style="color: #8b4b5c;">G</span><span style="color: #8b4b5c;">X</span> <span style="color: #2563EB;">| </span> <span style="color: #2563EB;">M</span><span style="color: #ffffff;">aplestory </span><span style="color: #2563EB;">L</span><span style="color: #ffffff;">evel-</span><span style="color: #2563EB;">U</span><span style="color: #2563EB;">!</span>
 
-v1.0.9
-------------------------------
+## ![](https://github.com/donniedice/SimpleQuestPlates/blob/main/images/kiwi.gif?raw=true) <span style="color: #8b4b5c;">R</span><span style="color: #8b4b5c;">G</span><span style="color: #8b4b5c;">X</span> <span style="color: #4ecdc4;">Mods</span> <span style="color: #3598db;">-</span> <span style="color: #8b4b5c;">R</span><span style="color: #6b8fb0;">ealm</span><span style="color: #8b4b5c;">G</span><span style="color: #8b4b5c;">X</span> <span style="color: #6b8fb0;">Community Project</span>
 
-**MSLU | MapleStory Level Up!**
+***
 
-------------------------------
+## <span style="color: #2563EB;">🎯 Overview</span>
 
-***MSLU | Maplestory Level Up! Will no longer be receiving updates. Functionality has been merged into [BLU | Better Level Up!](https://www.curseforge.com/wow/addons/blu-better-level-up "This link takes you to the Curseforge.com website, you may download it here and help support the developers."). If you're a fan of my sound addons, [BLU | Better Level Up!](https://www.curseforge.com/wow/addons/blu-better-level-up "This link takes you to the Curseforge.com website, you may download it here and help support the developers.") is available from all addon provider websites. Thank you!***
+**<span style="color: #8b4b5c;">R</span><span style="color: #8b4b5c;">G</span><span style="color: #8b4b5c;">X</span> <span style="color: #3598db;">| </span> <span style="color: #2563EB;">M</span><span style="color: #ffffff;">aplestory </span><span style="color: #2563EB;">L</span><span style="color: #ffffff;">evel-</span><span style="color: #2563EB;">U</span><span style="color: #2563EB;">!</span>** <span style="color: #e67e23;">brings a MapleStory-inspired level-up jingle to</span> <span style="color: #06c;">World of Warcraft</span><span style="color: #e67e23;">, replacing the default sound with a bright nostalgic level-up moment.</span>
 
-------------------------------
+![RealmGX Kiwi](https://github.com/donniedice/SimpleQuestPlates/blob/main/images/kiwi.gif?raw=true) **<span style="color: #2dc26b;">The Kiwi Says:</span>** <span style="color: #b96ad9;">"Maple ding! Bwwiiiee."</span>
 
-This is an addon that will play the "LEVEL UP!" chime from MapleStory when you level up in WoW.
+***
 
-------------------------------
+## <span style="color: #2563EB;">✨ Features</span>
 
-- This addon works in DRAGONFLIGHT!
+<span style="color: #2563EB;">🎵 <strong>MapleStory Sound</strong></span> <span style="color: #3598db;">-</span> <span style="color: #e67e23;">A MapleStory-style level-up jingle plays every time you gain a level.</span>
 
-- This addon works in CLASSIC WOW!
+<span style="color: #2563EB;">🎚️ <strong>Quality Options</strong></span> <span style="color: #3598db;">-</span> <span style="color: #e67e23;">Switch between</span> <span style="color: #4ecdc4;">High</span><span style="color: #e67e23;">,</span> <span style="color: #4ecdc4;">Medium</span><span style="color: #e67e23;">, and</span> <span style="color: #4ecdc4;">Low</span> <span style="color: #e67e23;">quality variants.</span>
 
-- This addon works in CLASSIC WotLK!
+<span style="color: #ff6b6b;">🔇 <strong>Smart Muting</strong></span> <span style="color: #3598db;">-</span> <span style="color: #e67e23;">Auto-mutes WoW's default level-up sound so you only hear MSLU.</span>
 
-------------------------------
-<div align="center">
+<span style="color: #2563EB;">💬 <strong>Login Message</strong></span> <span style="color: #3598db;">-</span> <span style="color: #e67e23;">A branded MSLU login message appears on login and can be toggled on or off.</span>
 
-**MSLU Download Links:**
+<span style="color: #b96ad9;">💾 <strong>Persistent Settings</strong></span> <span style="color: #3598db;">-</span> <span style="color: #e67e23;">Settings are saved between sessions.</span>
 
-[Curse](https://www.curseforge.com/wow/addons/mslu "This link takes you to the Curseforge.com website, you may download it here and help support the developers.") * [GitHub](https://github.com/donniedice/MSLU "This link takes you to the GitHub.com website, you may download it here.") * [Wago](https://addons.wago.io/addons/mslu "This link takes you to the Wago.io website, you may download it here and help support the developers.") * [WoWInterface](https://www.wowinterface.com/downloads/info26257-MSLU-MaplestoryLevelUp.html "This link takes you to the WoWInterface.com website, you may download it here.")
+<span style="color: #4ecdc4;">💬 <strong>Slash Commands</strong></span> <span style="color: #3598db;">-</span> <span style="color: #e67e23;">Simple</span> <span style="color: #4ecdc4;">/mslu</span> <span style="color: #e67e23;">commands for testing and switching sound quality.</span>
 
-</div>
+<span style="color: #2563EB;">🎮 <strong>Multi-Version</strong></span> <span style="color: #3598db;">-</span> <span style="color: #e67e23;">Includes support for Retail, Wrath, Burning Crusade, and Classic Era.</span>
+
+***
+
+## <span style="color: #2563EB;">📋 Slash Commands</span>
+
+<div style="background-color: #0d1117; color: #58a6ff; font-family: 'Consolas', 'Monaco', monospace; border: 1px solid #30363d;">/mslu help     # Show all available commands<br>/mslu test     # Play test sound<br>/mslu enable   # Enable the addon<br>/mslu disable  # Disable the addon<br>/mslu welcome  # Toggle login message<br>/mslu high     # Use high quality sound<br>/mslu med      # Use medium quality sound (default)<br>/mslu low      # Use low quality sound</div>
