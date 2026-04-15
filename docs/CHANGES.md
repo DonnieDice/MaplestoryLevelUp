@@ -1,3 +1,8 @@
+v2.0.3
+
+- Cleaned up workflow: removed non-functional Discord notification stubs
+- Workflow now focuses solely on packaging and release via BigWigs packager
+
 v2.0.2
 
 - Fixed GitHub Actions workflow `if` conditionals to use canonical expression syntax
