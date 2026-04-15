@@ -1,3 +1,8 @@
+v2.0.2
+
+- Fixed GitHub Actions workflow `if` conditionals to use canonical expression syntax
+- Removed redundant `${{ }}` wrappers from conditional steps
+
 v2.0.1
 
 - Fixed README and CurseForge description formatting to match the fuller RGX addon presentation

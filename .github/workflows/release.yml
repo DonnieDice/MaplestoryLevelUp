@@ -40,11 +40,11 @@ jobs:
           release-type: ${{ steps.set_release_type.outputs.release_type }}
 
       - name: Send Discord Notification
-        if: ${{ success() && secrets.DISCORD_WEBHOOK != '' }}
+        if: success() && secrets.DISCORD_WEBHOOK != ''
         continue-on-error: true
         run: echo "Discord notifications can be configured later."
 
       - name: Send Discord Failure Notification
-        if: ${{ failure() && secrets.DISCORD_WEBHOOK != '' }}
+        if: failure() && secrets.DISCORD_WEBHOOK != ''
         continue-on-error: true
         run: echo "Discord notifications can be configured later."
