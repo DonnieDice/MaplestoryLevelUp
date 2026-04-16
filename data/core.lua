@@ -4,7 +4,7 @@
 
 MSLU = MSLU or {}
 
-local ADDON_VERSION = GetAddOnMetadata("MaplestoryLevelUp", "Version") or "3.0.4"
+local ADDON_VERSION = GetAddOnMetadata("MaplestoryLevelUp", "Version") or "3.0.5"
 local ADDON_NAME = "MaplestoryLevelUp"
 local TITLE = "[|cff2563EBM|r|cffffffffaplestory |r|cff2563EBL|r|cffffffffevel-|r|cff2563EBU|r|cff2563EB!|r]"
 local SOUND_PATHS = {
