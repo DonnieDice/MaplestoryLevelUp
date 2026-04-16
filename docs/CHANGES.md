@@ -1,21 +1,11 @@
-v2.0.3
+# Changelog
 
-- Cleaned up workflow: removed non-functional Discord notification stubs
-- Workflow now focuses solely on packaging and release via BigWigs packager
+## [3.0.4] - 2026-04-15
 
-v2.0.2
+### Changed
+- Version dynamically pulled from TOC using `GetAddOnMetadata`
+- Improved localization safety checks to prevent nil reference errors
 
-- Fixed GitHub Actions workflow `if` conditionals to use canonical expression syntax
-- Removed redundant `${{ }}` wrappers from conditional steps
-
-v2.0.1
-
-- Fixed README and CurseForge description formatting to match the fuller RGX addon presentation
-- Corrected the branded `Up!` title styling in MapleStory docs
-
-v2.0.0
-
-- Renamed addon files and package metadata from `MSLU` to `MaplestoryLevelUp`
-- Reworked the addon to follow the same `SRLU` and `FFLU` structure with `data/core.lua` and `data/locales.lua`
-- Added MSLU slash commands, saved variables, login message toggle, and royal blue branding
-- Renamed the bundled sound file set to `maplestory_high.ogg`, `maplestory_med.ogg`, and `maplestory_low.ogg`
+### Fixed
+- Added guard clauses for `self.L` references in `DisplayWelcomeMessage()`, `HandleSlashCommand()`, and `ShowHelp()` functions
+- Consistent version across all TOC files (Retail, TBC, Vanilla, Wrath)

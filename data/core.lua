@@ -4,7 +4,7 @@
 
 MSLU = MSLU or {}
 
-local ADDON_VERSION = "2.0.1"
+local ADDON_VERSION = GetAddOnMetadata("MaplestoryLevelUp", "Version") or "3.0.4"
 local ADDON_NAME = "MaplestoryLevelUp"
 local TITLE = "[|cff2563EBM|r|cffffffffaplestory |r|cff2563EBL|r|cffffffffevel-|r|cff2563EBU|r|cff2563EB!|r]"
 local SOUND_PATHS = {
@@ -100,8 +100,13 @@ function MSLU:DisplayWelcomeMessage()
         return
     end
 
+    if not self.L then
+        print(PREFIX .. " |cffff0000MSLU Error:|r Localization not loaded")
+        return
+    end
+
     local version = "|cff8080ff(v" .. ADDON_VERSION .. ")|r"
-    local status = self:GetSetting("enabled") and self.L["ENABLED_STATUS"] or self.L["DISABLED_STATUS"]
+    local status = self:GetSetting("enabled") and (self.L and self.L["ENABLED_STATUS"] or "|cff00ff00Enabled|r") or (self.L and self.L["DISABLED_STATUS"] or "|cffff0000Disabled|r")
 
     print(PREFIX .. " - " .. TITLE .. " " .. status .. " " .. version)
 
@@ -114,6 +119,11 @@ function MSLU:DisplayWelcomeMessage()
 end
 
 function MSLU:HandleSlashCommand(args)
+    if not self.L then
+        print(PREFIX .. " |cffff0000MSLU Error:|r Localization not loaded")
+        return
+    end
+
     local command = string.lower(args or "")
 
     if command == "" or command == "help" then
@@ -152,6 +162,11 @@ function MSLU:HandleSlashCommand(args)
 end
 
 function MSLU:ShowHelp()
+    if not self.L then
+        print(PREFIX .. " |cffff0000MSLU Error:|r Localization not loaded")
+        return
+    end
+
     print(PREFIX .. " " .. self.L["HELP_HEADER"])
     print(PREFIX .. " " .. self.L["HELP_TEST"])
     print(PREFIX .. " " .. self.L["HELP_ENABLE"])
