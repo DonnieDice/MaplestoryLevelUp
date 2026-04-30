@@ -180,7 +180,11 @@ jobs:
         run: |
           set -euo pipefail
 
-          archive="${{ steps.package.outputs.archive_path }}"
+          archive="$(find .release -maxdepth 1 -type f -name '*.zip' | head -n 1)"
+          if [[ -z "$archive" || ! -f "$archive" ]]; then
+            echo "Could not find packaged zip in .release"
+            exit 1
+          fi
           project_id="$(grep -oP '^## X-Curse-Project-ID:\s*\K(.*)' MaplestoryLevelUp.toc)"
           version="${{ steps.version.outputs.version }}"
           changelog="$(cat "docs/changelogs/${version#v}.md")"
