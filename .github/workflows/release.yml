@@ -212,6 +212,17 @@ jobs:
           if [[ "$http_code" != "200" ]]; then
             echo "CurseForge upload failed with HTTP ${http_code}:"
             cat "$result_file"
+
+            if jq -e '.errorCode == 1001 and (.errorMessage | contains("metadata"))' "$result_file" >/dev/null 2>&1; then
+              echo "CurseForge returned a metadata error; checking whether the file was published anyway."
+              sleep 10
+              latest_display="$(curl -fsS "https://api.cfwidget.com/wow/addons/${project_id}" | jq -r '.download.display // empty')"
+              if [[ "$latest_display" == "v${version#v}" ]]; then
+                echo "CurseForge lists v${version#v} as the latest file; treating the upload as successful."
+                exit 0
+              fi
+            fi
+
             exit 1
           fi
 
