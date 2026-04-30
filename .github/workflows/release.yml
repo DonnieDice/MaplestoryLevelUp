@@ -244,7 +244,7 @@ jobs:
               footer="RGX Mods • Stable Release"
               description="A new stable release is live. Level up in style!"
               release_url="https://github.com/DonnieDice/MaplestoryLevelUp/releases/tag/v${version#v}"
-              downloads="[CurseForge](https://www.curseforge.com/wow/addons/maplestory-level-up) • [Wago](https://addons.wago.io/addons/maplestory-level-up) • [WoWInterface](https://www.wowinterface.com/downloads/info26257) • [GitHub](${release_url})"
+              downloads="[CurseForge](https://www.curseforge.com/wow/addons/maplestorylevelup) • [Wago](https://addons.wago.io/addons/maplestorylevelup) • [WoWInterface](https://www.wowinterface.com/downloads/info26257) • [GitHub](${release_url})"
               channel="Release"
               ;;
             "beta")
@@ -253,7 +253,7 @@ jobs:
               footer="RGX Mods • Beta Build"
               description="Beta build available for testing."
               release_url="https://github.com/DonnieDice/MaplestoryLevelUp/releases/tag/v${version#v}"
-              downloads="[CurseForge](https://www.curseforge.com/wow/addons/maplestory-level-up) • [GitHub](${release_url})"
+              downloads="[CurseForge](https://www.curseforge.com/wow/addons/maplestorylevelup) • [GitHub](${release_url})"
               channel="Beta"
               ;;
             "alpha"|"alpha-branch")
