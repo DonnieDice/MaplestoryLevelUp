@@ -195,18 +195,17 @@ jobs:
             [ $names[] as $name | .[] | select(.name == $name) | .id ]
           ' <<< "$versions_json")"
 
-          metadata_file="$(mktemp)"
-          jq -nc \
+          metadata="$(jq -nc \
             --arg displayName "v${version#v}" \
             --arg releaseType "release" \
             --arg changelog "$changelog" \
             --argjson gameVersions "$game_version_ids" \
-            '{displayName:$displayName, gameVersions:$gameVersions, releaseType:$releaseType, changelog:$changelog, changelogType:"markdown"}' > "$metadata_file"
+            '{displayName:$displayName, gameVersions:$gameVersions, releaseType:$releaseType, changelog:$changelog, changelogType:"markdown"}')"
 
           result_file="$(mktemp)"
-          http_code="$(curl -sS -o "$result_file" -w "%{http_code}" \
+          http_code="$(printf '%s' "$metadata" | curl -sS -o "$result_file" -w "%{http_code}" \
             -H "x-api-token: ${CF_API_KEY}" \
-            -F "metadata=@${metadata_file};type=application/json" \
+            -F "metadata=<-" \
             -F "file=@${archive}" \
             "https://wow.curseforge.com/api/projects/${project_id}/upload-file")"
 
