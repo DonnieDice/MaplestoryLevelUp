@@ -204,9 +204,9 @@ jobs:
 
           result_file="$(mktemp)"
           http_code="$(curl -sS -o "$result_file" -w "%{http_code}" \
-            -H "x-api-token: ${CF_API_KEY}" \
-            --form-string "metadata=${metadata}" \
+            -H "X-Api-Token: ${CF_API_KEY}" \
             -F "file=@${archive}" \
+            --form-string "metadata=${metadata}" \
             "https://wow.curseforge.com/api/projects/${project_id}/upload-file")"
 
           if [[ "$http_code" != "200" ]]; then
