@@ -203,9 +203,9 @@ jobs:
             '{displayName:$displayName, gameVersions:$gameVersions, releaseType:$releaseType, changelog:$changelog, changelogType:"markdown"}')"
 
           result_file="$(mktemp)"
-          http_code="$(printf '%s' "$metadata" | curl -sS -o "$result_file" -w "%{http_code}" \
+          http_code="$(curl -sS -o "$result_file" -w "%{http_code}" \
             -H "x-api-token: ${CF_API_KEY}" \
-            -F "metadata=<-" \
+            --form-string "metadata=${metadata}" \
             -F "file=@${archive}" \
             "https://wow.curseforge.com/api/projects/${project_id}/upload-file")"
 
