@@ -167,73 +167,13 @@ jobs:
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
 
-      - name: 📦 Package and Release
-        id: package
-        uses: BigWigsMods/packager@master
-        with:
-          # CurseForge currently rejects the packager multipart payload as
-          # "Missing field metadata", so upload CF explicitly in the next step.
-          args: -p 0
+- name: 📦 Package and Release
+  uses: BigWigsMods/packager@master
 
-      - name: 📤 Upload to CurseForge
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          archive="$(find .release -maxdepth 1 -type f -name '*.zip' | head -n 1)"
-          if [[ -z "$archive" || ! -f "$archive" ]]; then
-            echo "Could not find packaged zip in .release"
-            exit 1
-          fi
-          project_id="$(grep -oP '^## X-Curse-Project-ID:\s*\K(.*)' MaplestoryLevelUp.toc)"
-          version="${{ steps.version.outputs.version }}"
-          changelog="$(cat "docs/changelogs/${version#v}.md")"
-          game_versions='["12.0.5","12.0.1","12.0.0","11.2.7","5.5.3","4.4.2","3.4.3","2.5.4","1.15.8"]'
-
-          versions_json="$(curl -fsS -H "x-api-token: ${CF_API_KEY}" "https://wow.curseforge.com/api/game/wow/versions")"
-          game_version_ids="$(jq -c --argjson names "$game_versions" '
-            [ $names[] as $name | .[] | select(.name == $name) | .id ]
-          ' <<< "$versions_json")"
-
-          metadata="$(jq -nc \
-            --arg displayName "v${version#v}" \
-            --arg releaseType "release" \
-            --arg changelog "$changelog" \
-            --argjson gameVersions "$game_version_ids" \
-            '{displayName:$displayName, gameVersions:$gameVersions, releaseType:$releaseType, changelog:$changelog, changelogType:"markdown"}')"
-
-          result_file="$(mktemp)"
-          http_code="$(curl -sS -o "$result_file" -w "%{http_code}" \
-            -H "X-Api-Token: ${CF_API_KEY}" \
-            -F "file=@${archive}" \
-            --form-string "metadata=${metadata}" \
-            "https://wow.curseforge.com/api/projects/${project_id}/upload-file")"
-
-          if [[ "$http_code" != "200" ]]; then
-            echo "CurseForge upload failed with HTTP ${http_code}:"
-            cat "$result_file"
-
-            if jq -e '.errorCode == 1001 and (.errorMessage | contains("metadata"))' "$result_file" >/dev/null 2>&1; then
-              echo "CurseForge returned a metadata error; checking whether the file was published anyway."
-              sleep 10
-              latest_display="$(curl -fsS "https://api.cfwidget.com/wow/addons/${project_id}" | jq -r '.download.display // empty')"
-              if [[ "$latest_display" == "v${version#v}" ]]; then
-                echo "CurseForge lists v${version#v} as the latest file; treating the upload as successful."
-                exit 0
-              fi
-            fi
-
-            exit 1
-          fi
-
-          echo "CurseForge upload succeeded:"
-          cat "$result_file"
-
-      - name: ℹ️ Upload Notes
-        run: |
-          echo "GitHub, Wago, and WoWInterface uploads are handled by BigWigsMods/packager."
-          echo "CurseForge upload is handled by the explicit workflow upload step."
-          echo "Project IDs come from X-Curse-Project-ID, X-Wago-ID, and X-WoWI-ID in MaplestoryLevelUp.toc."
+- name: ℹ️ Upload Notes
+  run: |
+    echo "CurseForge, Wago, and WoWInterface uploads are handled by BigWigsMods/packager."
+    echo "Project IDs come from X-Curse-Project-ID, X-Wago-ID, and X-WoWI-ID in MaplestoryLevelUp.toc."
 
       - name: 📢 Send Discord Notification
         if: success()
