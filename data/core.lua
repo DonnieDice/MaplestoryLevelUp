@@ -9,11 +9,10 @@ local RGX = assert(_G.RGXFramework, "MSLU: RGX-Framework not loaded")
 
 MSLU = MSLU or {}
 
-local ADDON_VERSION = "4.0.0"
+local ADDON_VERSION = "4.0.1"
 local ADDON_NAME = "MaplestoryLevelUp"
-local ICON_PATH = "|Tinterface/addons/MaplestoryLevelUp/media/icon:16:16|t"
-local PREFIX = ICON_PATH .. " |cff2563EBMSLU:|r"
-local TITLE = "[|cff2563EBM|r|cffffffffaplestory|r |cff2563EBL|r|cffffffffevel-|r|cff2563EBU|r|cff2563EB!|r]"
+local PREFIX = "|Tinterface/addons/MaplestoryLevelUp/media/icon:16:16|t - |cffffffff[|r|cff2563EBMSLU|r|cffffffff]|r "
+local TITLE = "|Tinterface/addons/MaplestoryLevelUp/media/icon:18:18|t [|cff2563EBM|r|cffffffffaplestory|r |cff2563EBL|r|cffffffffevel-|r|cff2563EBU|r|cff2563EB!|r]"
 
 MSLU.version = ADDON_VERSION
 MSLU.addonName = ADDON_NAME
