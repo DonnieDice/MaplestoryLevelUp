@@ -169,15 +169,10 @@ jobs:
 
       - name: 📦 Package and Release
         uses: BigWigsMods/packager@master
-        with:
-          # CurseForge currently returns 403 for this project/token pairing.
-          # Keep GitHub packaging/release green while CF permissions are resolved.
-          args: -p 0
 
       - name: ℹ️ Upload Notes
         run: |
-          echo "GitHub release packaging is handled by BigWigsMods/packager."
-          echo "CurseForge upload is intentionally disabled with -p 0 until project permissions are resolved."
+          echo "CurseForge, Wago, and WoWInterface uploads are handled by BigWigsMods/packager."
           echo "Project IDs come from X-Curse-Project-ID, X-Wago-ID, and X-WoWI-ID in MaplestoryLevelUp.toc."
 
       - name: 📢 Send Discord Notification
