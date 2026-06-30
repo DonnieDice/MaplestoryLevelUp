@@ -167,13 +167,13 @@ jobs:
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
 
-- name: 📦 Package and Release
-  uses: BigWigsMods/packager@master
+      - name: 📦 Package and Release
+        uses: BigWigsMods/packager@master
 
-- name: ℹ️ Upload Notes
-  run: |
-    echo "CurseForge, Wago, and WoWInterface uploads are handled by BigWigsMods/packager."
-    echo "Project IDs come from X-Curse-Project-ID, X-Wago-ID, and X-WoWI-ID in MaplestoryLevelUp.toc."
+      - name: ℹ️ Upload Notes
+        run: |
+          echo "CurseForge, Wago, and WoWInterface uploads are handled by BigWigsMods/packager."
+          echo "Project IDs come from X-Curse-Project-ID, X-Wago-ID, and X-WoWI-ID in MaplestoryLevelUp.toc."
 
       - name: 📢 Send Discord Notification
         if: success()
